@@ -1,0 +1,62 @@
+*, *::after , *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoNavContainer {
+    flex: 1 1 ;
+    display: flex;
+    gap: 1em;
+    border: 1px solid black;
+}
+
+
+#logoContainer {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1;
+    gap: 1em;
+    align-items: center;
+    max-width: 12em;
+    min-width: fit-content;
+    padding: .5em;
+}
+
+.logoText {
+    font-size: 4em;
+    /* color: #5C3E3F; */
+    text-shadow: 
+    0.025em 0.025em 0 white,
+    0.05em 0.05em 0 blue,
+    0.075em 0.075em 0 #5C3E3F,
+    0.1em 0.1em 0 black;
+}
+
+#nav {
+    border: 3px solid black;
+    min-width: fit-content;
+    flex: 2 1 ;
+}
+
+#nav ul {
+    padding: 0 .5em;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: 1px solid yellow;
+    min-height: 100%;
+}
+
+.logInContainer {
+    flex: 1 1 ;
+    border: 1px solid red;
+}
