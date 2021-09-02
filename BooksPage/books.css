@@ -1,0 +1,23 @@
+* , *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    background-image: url("../images/undraw_book_lover_mkck.svg");
+    background-blend-mode: hue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    
+}
