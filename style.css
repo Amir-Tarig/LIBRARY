@@ -23,6 +23,7 @@
     padding-left:  1em;
 }
 
+
 .logoText {
     font-size: calc(30px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
     /* color: #5C3E3F; */

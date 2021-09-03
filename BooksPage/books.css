@@ -8,7 +8,7 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, .9);
-    background-image: url("../images/undraw_book_lover_mkck.svg");
+    background-image: url("../images/undraw_education_f8ru.svg");
     background-blend-mode: hue;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,8 +16,100 @@ body, html {
     background-attachment: fixed;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    
+#logoContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255, .8);
+    width: fit-content;
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+    z-index: 100;
+    border-radius: 40px;
 }
+
+.logo {
+    filter: grayscale(80%);
+}
+
+.logoText {
+    font-size: calc(20px + (50 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: #F0F0F0;
+    text-shadow: 
+    0.025em 0.025em 0 #BEBEBE,
+    0.05em 0.05em 0 #BBBBBB;
+    /* 0.075em 0.075em 0 #A9A9A9; */
+    /* 0.1em 0.1em 0 #999999; */
+    /* text-shadow: 
+    0.025em 0.025em 0 white,
+    0.05em 0.05em 0 blue,
+    0.075em 0.075em 0 #5C3E3F,
+    0.1em 0.1em 0 black; */
+}
+
+.promoHeader {
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.test {
+    height: 100%;
+    border: 1px solid red;
+}
+
+.promoHeader figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.promoHeader figure img{
+    max-width: 100%;
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+ .text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(1rem + (120 - 16) * ((100vw - 300px) / (1600 - 300)));
+    color: #F0F0F0;
+    text-shadow: 
+    0.025em 0.025em 0 #BEBEBE,
+    0.05em 0.05em 0 #BBBBBB;
+    width: 100%;
+    text-align: center;
+}
+
+.bookContainer  {
+    border: 1px solid red;
+}
+
+#book {
+    border: 1px solid red;
+    width: 20em;
+    height: 25em;
+    position: relative;
+    display: flex;
+}
+
+.btnContainer {
+    border: 1px solid red;
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
