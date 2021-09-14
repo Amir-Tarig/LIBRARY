@@ -43,11 +43,9 @@ function fetchingBooks() {
                 Book.image = book.volumeInfo.imageLinks.smallThumbnail
                 Book.publisher = book.volumeInfo.publisher
                 Book.publishedDate = book.volumeInfo.publishedDate
-                // Book.price =  `${book.saleInfo.listPrice.amount} ${book.saleInfo.listPrice.currencyCode}`
-                // console.log(Book.price)
                 Book.id = book.id
                 displayBook(Book)
-        })
+            })
     })
     .catch(err => {
         console.error(err);
@@ -55,8 +53,45 @@ function fetchingBooks() {
 }
 
 function displayBook(book) {
-    const bookContainer = document.querySelector('.bookContainer')
-    console.log(book.title)
+    const booksContainer = document.querySelector('.booksContainer')
+
+    let imgPriceContainer = document.createElement('div')
+    let buttonsContainer = document.createElement('div')
+    let Book = document.createElement('div')
+
+    let imgTag = document.createElement('img')
+    let priceTag = document.createElement('p')
+
+    let btn1 = document.createElement('button')
+    let btn2 = document.createElement('button')
+
+       imgTag.classList.add('bookCover')
+       priceTag.classList.add('price')
+       Book.classList.add('book')
+
+       imgPriceContainer.classList.add('img-price')
+       buttonsContainer.classList.add('btnContainer')
+       btn1.classList.add('btn')
+       btn2.classList.add('btn')
+       
+
+       imgTag.src = book.image
+       priceTag.innerText = book.price
+
+       btn1.innerText = "INFO"
+       btn2.innerText = "ADD"
+
+       imgPriceContainer.appendChild(imgTag)
+       imgPriceContainer.appendChild(priceTag)
+
+       buttonsContainer.appendChild(btn1)
+       buttonsContainer.appendChild(btn2)
+
+       Book.appendChild(imgPriceContainer)
+       Book.appendChild(buttonsContainer)
+
+       booksContainer.appendChild(Book)
+    // console.log(books)
 }
 
 
