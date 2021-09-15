@@ -62,8 +62,16 @@ function displayBook(book) {
     let imgTag = document.createElement('img')
     let priceTag = document.createElement('p')
 
-    let btn1 = document.createElement('button')
+    let btn1 = document.createElement('a')
     let btn2 = document.createElement('button')
+
+    btn1.classList.add('link')
+    btn2.classList.add('btn')
+
+    btn1.href = "/BooksPage/bookInfo/bookInfo.html"
+    btn1.textContent = "INFO"
+    btn2.innerText = "ADD"
+
 
        imgTag.classList.add('bookCover')
        priceTag.classList.add('price')
@@ -71,16 +79,16 @@ function displayBook(book) {
 
        imgPriceContainer.classList.add('img-price')
        buttonsContainer.classList.add('btnContainer')
-       btn1.classList.add('btn')
-       btn2.classList.add('btn')
+
+      
        
 
        imgTag.src = book.image
        priceTag.innerText = book.price
 
-       btn1.innerText = "INFO"
-       btn2.innerText = "ADD"
+      
 
+    
        imgPriceContainer.appendChild(imgTag)
        imgPriceContainer.appendChild(priceTag)
 
