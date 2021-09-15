@@ -93,23 +93,90 @@ body, html {
     text-align: center;
 }
 
-.bookContainer  {
-    border: 1px solid red;
+.container {
+    /* border: 1px solid red; */
+    padding: 2em 20em;
 }
 
-#book {
-    border: 1px solid red;
-    width: 20em;
-    height: 25em;
+.booksContainer  {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    gap: 2em;
+    /* padding-left: 1em; */
+    position: relative;
+    top: 2em;
+    margin: auto;
+}
+
+
+
+.book {
+    /* border: 1px solid red; */
+    width: 15em;
+    height: 19em;
     position: relative;
     display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-direction: column;
 }
 
-.btnContainer {
-    border: 1px solid red;
-    align-self: flex-end;
+.img-price {
+    border: 1px solid black;
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+.bookCover {
+    max-width: 100%;
     width: 100%;
+    height: 100%;
+}
+
+.price {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    background: white;
+    padding: .5em;
+    color: red;
+    /* border: 1px solid #6C63FF; */
+}
+
+
+
+.btnContainer {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
+    gap: .5em;
+    position: absolute;
+    bottom: 0;
 }
+
+.btn {
+    padding: .4em 2em;
+    border-radius: 5px;
+    border-color: #6C63FF;
+    background: none;
+    border-top-right-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    /* border-color: whitesmoke; */
+    background:#6C63FF;
+    color: whitesmoke;
+}
+
+
+
+
 
