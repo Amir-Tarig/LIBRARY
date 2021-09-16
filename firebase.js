@@ -1,6 +1,6 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
         import { getStorage } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js";
-        import { getAuth} from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
+        import {getAuth } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
        
         
         const firebaseConfig = {
@@ -15,11 +15,11 @@
         // Initialize Firebase
      const app = initializeApp(firebaseConfig);
      const storage = getStorage(app)
-     const auth = getAuth(app)
+     const auth = getAuth()
    
 
    
 
-     export { storage, auth }
+     export { storage , auth}
 
     
