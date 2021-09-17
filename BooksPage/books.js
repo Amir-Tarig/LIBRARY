@@ -1,8 +1,3 @@
-// import {auth} from '/firebase.js'
-// console.log(storage )
-// console.log( provider )
-console.log(auth)
-
 function fetchingBooks() {
     let newBookList = []
     const Book = {
